@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+    <title>Exemplo</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome"/>
+        <button class="botao">Adicionar</button>
+    </div>
+    <script>
+
+        //Formas de buscar elementos na DOM
+        //var inputElement = document.getElementById("nome");
+        //var inputElement = document.getElementsByTagName("input")[0];
+        //var inputElement = document.getElementsByClassName("nome")[0];
+        
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function(){
+            var text = inputElement.value;
+
+            alert(text);
+        }
+
+       
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+
+
+
+</html>
